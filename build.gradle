@@ -1,19 +1,20 @@
 buildscript {
     repositories {
-        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
+        maven { url 'https://lss233.littleservice.cn/#/repositories/minecraft/' }
+        // // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
 
-        // 阿里云 Maven 中央仓库镜像
-        maven { url = "https://maven.aliyun.com/repository/public" }
+        // // 阿里云 Maven 中央仓库镜像
+        // maven { url = "https://maven.aliyun.com/repository/public" }
 
-        // 清华大学 TUNA 镜像
-        maven { url = "https://mirrors.tuna.tsinghua.edu.cn/maven/" }
-        maven { url = "https://mirrors.tuna.tsinghua.edu.cn/minecraft" }
+        // // 清华大学 TUNA 镜像
+        // maven { url = "https://mirrors.tuna.tsinghua.edu.cn/maven/" }
+        // maven { url = "https://mirrors.tuna.tsinghua.edu.cn/minecraft" }
         
         
-        // Create 官方仓库
+        // // Create 官方仓库
         maven { url = "https://maven.createmod.net/" }
-
+        
         mavenCentral()
     }
     dependencies {
@@ -157,9 +158,11 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven { url 'https://lss233.littleservice.cn/#/repositories/minecraft/' }
     maven {
         url = "https://maven.createmod.net/"
     }
+    
     mavenCentral()
 }
 
