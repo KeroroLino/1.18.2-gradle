@@ -1,6 +1,7 @@
 name: Build Mod
 
 on:
+  workflow_dispatch:   # 手动触发
   push:
     branches: [ "**" ]
   pull_request:
